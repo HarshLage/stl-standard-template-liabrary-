@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  queue<string>q;
+  q.push("harsh");
+  q.push("nilesh");
+  q.push("vivek");
+  q.push("vedant");
+  q.push("nikhil");
+
+  cout<<"first element "<<q.front()<<endl;
+  cout<<"last element"<<q.back()<<endl;
+  
+  while(!q.empty()){
+    cout<<q.front()<<" ";
+    q.pop();
+
+
+  }
+  
+
+  return 0; 
+}
