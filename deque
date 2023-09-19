@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  deque<int>d;
+  d.push_back(4);
+  d.push_front(45); 
+
+  for(int i =0;i<d.size();i++){
+    cout<<d[i]<<" ";
+  }
+
+  cout<<"size before erase "<<d.size()<<endl;
+  cout<<endl;
+  cout<<d.front()<<endl;
+  
+  cout<<d.back()<<endl;
+  cout<<d.empty()<<endl;//return boolean
+
+  d.erase(d.begin(),d.begin() + 1);
+  cout<<"after erase"<<endl;
+  //elements after erase
+
+  for(int i =0;i<d.size();i++){
+    cout<<d[i]<<" ";
+  }
+
+  cout<<endl;
+  
+   cout<<"size after erase "<<d.size()<<endl;
+  return 0; 
+}
