@@ -1,0 +1,20 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  stack<int>s;
+  s.push(4);
+  s.push(4);
+  s.push(8);
+  s.push(0);
+  cout<<s.top()<<endl;
+// for printting all the elements while print element and pop it and then another one come then pop it also but first print it 
+//   while(! s.empty()){
+//     cout<<s.top()<<endl;
+//     s.pop();
+//   }
+  cout<<endl;
+  s.pop();
+  cout<<"top element is "<<s.top();
+  return 0; 
+}
