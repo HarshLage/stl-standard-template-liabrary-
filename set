@@ -1,0 +1,36 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{ 
+  set<int>s;
+  s.insert(34);
+  s.insert(78);
+  s.insert(78);
+  s.insert(4);
+  
+ 
+  for(auto it =s.begin();it!=s.end();++it){
+    cout<<*it<<endl;
+    
+  }
+
+  set<int>::iterator it = s.begin();
+  it++;
+  s.erase(it);
+   
+   cout<<endl;
+  for(auto it =s.begin();it!=s.end();++it){
+    cout<<*it<<endl;
+    
+  }
+
+  set<int>::iterator itr = s.find(4);
+  cout<<"find lement or not"<<endl;
+  for(it = itr;it!=s.end();it++){
+    cout<<*it<<endl;
+
+  }
+  
+
+  return 0; 
+}
