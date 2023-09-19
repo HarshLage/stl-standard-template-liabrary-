@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  list<int>liste;
+  liste.push_back(45);
+  liste.push_front(55);
+  list<int>l(5,100);
+  for(int i : l){
+    cout<<i<<" ";
+  }
+  cout<<endl;
+
+  for(auto i = liste.begin(); i != liste.end(); ++i){
+    cout<<*i<<endl;
+
+  };
+  cout<<liste.front()<<endl;
+  cout<<liste.back()<<endl;
+ 
+  //after erase
+  liste.erase(liste.begin());
+  cout<<"size is : ";
+  cout<<liste.size()<<endl;
+
+  return 0; 
+}
